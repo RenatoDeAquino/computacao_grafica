@@ -54,61 +54,13 @@ w.create_line(point_10[0],point_10[1],point_11[0],point_11[1])
 w.create_line(point_11[0],point_11[1],point_12[0],point_12[1])
 w.create_line(point_12[0],point_12[1],point_1 [0],point_1 [1])
 #--------------------------não mexer na parte de cima
-menu = int(input("1-transladar \n2-escalar\n3-espelhar"))
-if menu == 1:
-    ajudax = float(input("Digite o quanto quer andar no eixo x"))
-    ajuday = float(input("Digite o quanto quer andar no eixo y"))
-    point_1 [0] += ajudax
-    point_2 [0] += ajudax
-    point_3 [0] += ajudax
-    point_4 [0] += ajudax
-    point_5 [0] += ajudax
-    point_6 [0] += ajudax
-    point_7 [0] += ajudax
-    point_8 [0] += ajudax
-    point_9 [0] += ajudax
-    point_10[0] += ajudax
-    point_11[0] += ajudax
-    point_12[0] += ajudax
-    #---------------------
-    point_1 [1] -= ajuday
-    point_2 [1] -= ajuday
-    point_3 [1] -= ajuday
-    point_4 [1] -= ajuday
-    point_5 [1] -= ajuday
-    point_6 [1] -= ajuday
-    point_7 [1] -= ajuday
-    point_8 [1] -= ajuday
-    point_9 [1] -= ajuday
-    point_10[1] -= ajuday
-    point_11[1] -= ajuday
-    point_12[1] -= ajuday
-    w.delete('all')
-    w.create_line(250,0,250,500)
-    w.create_line(0,250,500,250)
-    w.create_line(point_1 [0],point_1 [1],point_2 [0],point_2 [1])
-    w.create_line(point_2 [0],point_2 [1],point_3 [0],point_3 [1])
-    w.create_line(point_3 [0],point_3 [1],point_4 [0],point_4 [1])
-    w.create_line(point_4 [0],point_4 [1],point_5 [0],point_5 [1])
-    w.create_line(point_5 [0],point_5 [1],point_6 [0],point_6 [1])
-    w.create_line(point_6 [0],point_6 [1],point_7 [0],point_7 [1])
-    w.create_line(point_7 [0],point_7 [1],point_8 [0],point_8 [1])
-    w.create_line(point_8 [0],point_8 [1],point_9 [0],point_9 [1])
-    w.create_line(point_9 [0],point_9 [1],point_10[0],point_10[1])
-    w.create_line(point_10[0],point_10[1],point_11[0],point_11[1])
-    w.create_line(point_11[0],point_11[1],point_12[0],point_12[1])
-    w.create_line(point_12[0],point_12[1],point_1 [0],point_1 [1])
-if menu == 2:
-    ajudax = float(input("quer escalar pra quanto no x"))
-    ajuday = float(input("quer escalar pra quanto no y"))
-    if ajudax > 0:
-        point_7 [0] += ajudax
-        point_8 [0] += ajudax
-        point_9 [0] += ajudax
-        point_10[0] += ajudax
-        point_11[0] += ajudax
-        point_12[0] += ajudax
-    elif ajudax < 0:
+menu = 40028922
+
+while menu != 0:
+    menu = int(input("1-transladar \n2-escalar\n3-espelhar"))
+    if menu == 1:
+        ajudax = float(input("Digite o quanto quer andar no eixo x"))
+        ajuday = float(input("Digite o quanto quer andar no eixo y"))
         point_1 [0] += ajudax
         point_2 [0] += ajudax
         point_3 [0] += ajudax
@@ -117,7 +69,12 @@ if menu == 2:
         point_6 [0] += ajudax
         point_7 [0] += ajudax
         point_8 [0] += ajudax
-    if ajuday > 0:
+        point_9 [0] += ajudax
+        point_10[0] += ajudax
+        point_11[0] += ajudax
+        point_12[0] += ajudax
+        #---------------------
+        point_1 [1] -= ajuday
         point_2 [1] -= ajuday
         point_3 [1] -= ajuday
         point_4 [1] -= ajuday
@@ -128,74 +85,286 @@ if menu == 2:
         point_9 [1] -= ajuday
         point_10[1] -= ajuday
         point_11[1] -= ajuday
-    elif ajuday < 0:
-        point_1 [1] -= ajuday
-        point_2 [1] -= ajuday
-        point_3 [1] -= ajuday
-        point_10[1] -= ajuday
-        point_11[1] -= ajuday
         point_12[1] -= ajuday
-    w.delete('all')
-    w.create_line(250,0,250,500)
-    w.create_line(0,250,500,250)
-    w.create_line(point_1 [0],point_1 [1],point_2 [0],point_2 [1])
-    w.create_line(point_2 [0],point_2 [1],point_3 [0],point_3 [1])
-    w.create_line(point_3 [0],point_3 [1],point_4 [0],point_4 [1])
-    w.create_line(point_4 [0],point_4 [1],point_5 [0],point_5 [1])
-    w.create_line(point_5 [0],point_5 [1],point_6 [0],point_6 [1])
-    w.create_line(point_6 [0],point_6 [1],point_7 [0],point_7 [1])
-    w.create_line(point_7 [0],point_7 [1],point_8 [0],point_8 [1])
-    w.create_line(point_8 [0],point_8 [1],point_9 [0],point_9 [1])
-    w.create_line(point_9 [0],point_9 [1],point_10[0],point_10[1])
-    w.create_line(point_10[0],point_10[1],point_11[0],point_11[1])
-    w.create_line(point_11[0],point_11[1],point_12[0],point_12[1])
-    w.create_line(point_12[0],point_12[1],point_1 [0],point_1 [1])
-if menu == 3:
-    ajudax = int(input("deseja espelhar no x?\n0 ou 1"))
-    ajuday = int(input("deseja espelhar no y?\n0 ou 1"))
-    if ajudax == 1:
-        point_1 [0] -= 40  
-        point_2 [0] -= 40
-        point_3 [0] -= 20
-        point_4 [0] -= 40
-        point_5 [0] -= 50
-        point_6 [0] -= 50
-        point_7 [0] -= 60
-        point_8 [0] -= 60
-        point_9 [0] -= 80
-        point_10[0] -= 100
-        point_11[0] -= 80
-        point_12[0] -= 80
-    if ajuday == 1:
-        point_1 [1] += 40  
-        point_2 [1] += 60
-        point_3 [1] += 60
-        point_4 [1] += 80
-        point_5 [1] += 80
-        point_6 [1] += 90
-        point_7 [1] += 90
-        point_8 [1] += 80
-        point_9 [1] += 80
-        point_10[1] += 60
-        point_11[1] += 60
-        point_12[1] += 40
-
-
+        w.delete('all')
+        w.create_line(250,0,250,500)
+        w.create_line(0,250,500,250)
+        w.create_line(point_1 [0],point_1 [1],point_2 [0],point_2 [1])
+        w.create_line(point_2 [0],point_2 [1],point_3 [0],point_3 [1])
+        w.create_line(point_3 [0],point_3 [1],point_4 [0],point_4 [1])
+        w.create_line(point_4 [0],point_4 [1],point_5 [0],point_5 [1])
+        w.create_line(point_5 [0],point_5 [1],point_6 [0],point_6 [1])
+        w.create_line(point_6 [0],point_6 [1],point_7 [0],point_7 [1])
+        w.create_line(point_7 [0],point_7 [1],point_8 [0],point_8 [1])
+        w.create_line(point_8 [0],point_8 [1],point_9 [0],point_9 [1])
+        w.create_line(point_9 [0],point_9 [1],point_10[0],point_10[1])
+        w.create_line(point_10[0],point_10[1],point_11[0],point_11[1])
+        w.create_line(point_11[0],point_11[1],point_12[0],point_12[1])
+        w.create_line(point_12[0],point_12[1],point_1 [0],point_1 [1])
+    if menu == 2:
+        ajudax = float(input("quer escalar pra quanto no x"))
+        ajuday = float(input("quer escalar pra quanto no y"))
+        if ajudax > 0:
+            point_7 [0] += ajudax
+            point_8 [0] += ajudax
+            point_9 [0] += ajudax
+            point_10[0] += ajudax
+            point_11[0] += ajudax
+            point_12[0] += ajudax
+        elif ajudax < 0:
+            point_1 [0] += ajudax
+            point_2 [0] += ajudax
+            point_3 [0] += ajudax
+            point_4 [0] += ajudax
+            point_5 [0] += ajudax
+            point_6 [0] += ajudax
+            point_7 [0] += ajudax
+            point_8 [0] += ajudax
+        if ajuday > 0:
+            point_2 [1] -= ajuday
+            point_3 [1] -= ajuday
+            point_4 [1] -= ajuday
+            point_5 [1] -= ajuday
+            point_6 [1] -= ajuday
+            point_7 [1] -= ajuday
+            point_8 [1] -= ajuday
+            point_9 [1] -= ajuday
+            point_10[1] -= ajuday
+            point_11[1] -= ajuday
+        elif ajuday < 0:
+            point_1 [1] -= ajuday
+            point_2 [1] -= ajuday
+            point_3 [1] -= ajuday
+            point_10[1] -= ajuday
+            point_11[1] -= ajuday
+            point_12[1] -= ajuday
+        w.delete('all')
+        w.create_line(250,0,250,500)
+        w.create_line(0,250,500,250)
+        w.create_line(point_1 [0],point_1 [1],point_2 [0],point_2 [1])
+        w.create_line(point_2 [0],point_2 [1],point_3 [0],point_3 [1])
+        w.create_line(point_3 [0],point_3 [1],point_4 [0],point_4 [1])
+        w.create_line(point_4 [0],point_4 [1],point_5 [0],point_5 [1])
+        w.create_line(point_5 [0],point_5 [1],point_6 [0],point_6 [1])
+        w.create_line(point_6 [0],point_6 [1],point_7 [0],point_7 [1])
+        w.create_line(point_7 [0],point_7 [1],point_8 [0],point_8 [1])
+        w.create_line(point_8 [0],point_8 [1],point_9 [0],point_9 [1])
+        w.create_line(point_9 [0],point_9 [1],point_10[0],point_10[1])
+        w.create_line(point_10[0],point_10[1],point_11[0],point_11[1])
+        w.create_line(point_11[0],point_11[1],point_12[0],point_12[1])
+        w.create_line(point_12[0],point_12[1],point_1 [0],point_1 [1])
     
-    w.delete('all')
-    w.create_line(250,0,250,500)
-    w.create_line(0,250,500,250)
-    w.create_line(point_1 [0],point_1 [1],point_2 [0],point_2 [1])
-    w.create_line(point_2 [0],point_2 [1],point_3 [0],point_3 [1])
-    w.create_line(point_3 [0],point_3 [1],point_4 [0],point_4 [1])
-    w.create_line(point_4 [0],point_4 [1],point_5 [0],point_5 [1])
-    w.create_line(point_5 [0],point_5 [1],point_6 [0],point_6 [1])
-    w.create_line(point_6 [0],point_6 [1],point_7 [0],point_7 [1])
-    w.create_line(point_7 [0],point_7 [1],point_8 [0],point_8 [1])
-    w.create_line(point_8 [0],point_8 [1],point_9 [0],point_9 [1])
-    w.create_line(point_9 [0],point_9 [1],point_10[0],point_10[1])
-    w.create_line(point_10[0],point_10[1],point_11[0],point_11[1])
-    w.create_line(point_11[0],point_11[1],point_12[0],point_12[1])
-    w.create_line(point_12[0],point_12[1],point_1 [0],point_1 [1])
-    
+    if menu == 3:
+        ajudax = int(input("deseja espelhar no x?\n0 ou 1"))
+        ajuday = int(input("deseja espelhar no y?\n0 ou 1"))
+        if ajudax == 1:
+            if point_1 [0] > 250:
+                me_ajuda = point_1[0] - 250
+                point_1[0] = 250
+                point_1[0]-= me_ajuda
+            elif point_1[0] < 250:
+                me_ajuda = 250 - point_1[0]
+                point_1[0] = 250
+                point_1[0] += me_ajuda
+            if point_2[0] > 250:
+                me_ajuda = point_2[0] - 250
+                point_2[0] = 250
+                point_2[0] -= me_ajuda
+            elif point_2[0] < 250:
+                me_ajuda = 250 - point_2[0]
+                point_2[0] = 250
+                point_2[0] += me_ajuda
+            if point_3[0] > 250:
+                me_ajuda = point_3[0] - 250
+                point_3[0] = 250
+                point_3[0] -= me_ajuda
+            elif point_3[0] < 250:
+                me_ajuda = 250 - point_3[0]
+                point_3[0] = 250
+                point_3[0] += me_ajuda
+            if point_4[0] > 250:
+                me_ajuda = point_4[0] - 250
+                point_4[0] = 250
+                point_4[0] -= me_ajuda
+            elif point_4[0] < 250:
+                me_ajuda = 250 - point_4[0]
+                point_4[0] = 250
+                point_4[0] += me_ajuda
+            if point_5[0] > 250:
+                me_ajuda = point_5[0] - 250
+                point_5[0] = 250
+                point_5[0] -= me_ajuda
+            elif point_5[0] < 250:
+                me_ajuda = 250 - point_5[0]
+                point_5[0] = 250
+                point_5[0] += me_ajuda
+            if point_6[0] > 250:
+                me_ajuda = point_6[0] - 250
+                point_6[0] = 250
+                point_6[0] -= me_ajuda
+            elif point_6[0] < 250:
+                me_ajuda = 250 - point_6[0]
+                point_6[0] = 250
+                point_6[0] += me_ajuda
+            if point_7[0] > 250:
+                me_ajuda = point_7[0] - 250
+                point_7[0] = 250
+                point_7[0] -= me_ajuda
+            elif point_7[0] < 250:
+                me_ajuda = 250 - point_7[0]
+                point_7[0] = 250
+                point_7[0] += me_ajuda
+            if point_8[0] > 250:
+                me_ajuda = point_8[0] - 250
+                point_8[0] = 250
+                point_8[0] -= me_ajuda
+            elif point_8[0] < 250:
+                me_ajuda = 250 - point_8[0]
+                point_8[0] = 250
+                point_8[0] += me_ajuda
+            if point_9[0] > 250:
+                me_ajuda = point_9[0] - 250
+                point_9[0] = 250
+                point_9[0] -= me_ajuda
+            elif point_9[0] < 250:
+                me_ajuda = 250 - point_9[0]
+                point_9[0] = 250
+                point_9[0] += me_ajuda
+            if point_10[0] > 250:
+                me_ajuda = point_10[0] - 250
+                point_10[0] = 250
+                point_10[0] -= me_ajuda
+            elif point_10[0] < 250:
+                me_ajuda = 250 - point_10[0]
+                point_10[0] = 250
+                point_10[0] += me_ajuda
+            if point_11[0] > 250:
+                me_ajuda = point_11[0] - 250
+                point_11[0] = 250
+                point_11[0] -= me_ajuda
+            elif point_11[0] < 250:
+                me_ajuda = 250 - point_11[0]
+                point_11[0] = 250
+                point_11[0] += me_ajuda
+            if point_12[0] > 250:
+                me_ajuda = point_12[0] - 250
+                point_12[0] = 250
+                point_12[0] -= me_ajuda
+            elif point_12[0] < 250:
+                me_ajuda = 250 - point_12[0]
+                point_12[0] = 250
+                point_12[0] += me_ajuda
+        if ajuday == 1:
+            if point_1 [1] > 250:
+                me_ajuda = point_1[1] - 250
+                point_1[1] = 250
+                point_1[1]-= me_ajuda
+            elif point_1[1] < 250:
+                me_ajuda = 250 - point_1[1]
+                point_1[1] = 250
+                point_1[1] += me_ajuda
+            if point_2[1] > 250:
+                me_ajuda = point_2[1] - 250
+                point_2[1] = 250
+                point_2[1] -= me_ajuda
+            elif point_2[1] < 250:
+                me_ajuda = 250 - point_2[1]
+                point_2[1] = 250
+                point_2[1] += me_ajuda
+            if point_3[1] > 250:
+                me_ajuda = point_3[1] - 250
+                point_3[1] = 250
+                point_3[1] -= me_ajuda
+            elif point_3[1] < 250:
+                me_ajuda = 250 - point_3[1]
+                point_3[1] = 250
+                point_3[1] += me_ajuda
+            if point_4[1] > 250:
+                me_ajuda = point_4[1] - 250
+                point_4[1] = 250
+                point_4[1] -= me_ajuda
+            elif point_4[1] < 250:
+                me_ajuda = 250 - point_4[1]
+                point_4[1] = 250
+                point_4[1] += me_ajuda
+            if point_5[1] > 250:
+                me_ajuda = point_5[1] - 250
+                point_5[1] = 250
+                point_5[1] -= me_ajuda
+            elif point_5[1] < 250:
+                me_ajuda = 250 - point_5[1]
+                point_5[1] = 250
+                point_5[1] += me_ajuda
+            if point_6[1] > 250:
+                me_ajuda = point_6[1] - 250
+                point_6[1] = 250
+                point_6[1] -= me_ajuda
+            elif point_6[1] < 250:
+                me_ajuda = 250 - point_6[1]
+                point_6[1] = 250
+                point_6[1] += me_ajuda
+            if point_7[1] > 250:
+                me_ajuda = point_7[1] - 250
+                point_7[1] = 250
+                point_7[1] -= me_ajuda
+            elif point_7[1] < 250:
+                me_ajuda = 250 - point_7[1]
+                point_7[1] = 250
+                point_7[1] += me_ajuda
+            if point_8[1] > 250:
+                me_ajuda = point_8[1] - 250
+                point_8[1] = 250
+                point_8[1] -= me_ajuda
+            elif point_8[1] < 250:
+                me_ajuda = 250 - point_8[1]
+                point_8[1] = 250
+                point_8[1] += me_ajuda
+            if point_9[1] > 250:
+                me_ajuda = point_9[1] - 250
+                point_9[1] = 250
+                point_9[1] -= me_ajuda
+            elif point_9[1] < 250:
+                me_ajuda = 250 - point_9[1]
+                point_9[1] = 250
+                point_9[1] += me_ajuda
+            if point_10[1] > 250:
+                me_ajuda = point_10[1] - 250
+                point_10[1] = 250
+                point_10[1] -= me_ajuda
+            elif point_10[1] < 250:
+                me_ajuda = 250 - point_10[1]
+                point_10[1] = 250
+                point_10[1] += me_ajuda
+            if point_11[1] > 250:
+                me_ajuda = point_11[1] - 250
+                point_11[1] = 250
+                point_11[1] -= me_ajuda
+            elif point_11[1] < 250:
+                me_ajuda = 250 - point_11[1]
+                point_11[1] = 250
+                point_11[1] += me_ajuda
+            if point_12[1] > 250:
+                me_ajuda = point_12[1] - 250
+                point_12[1] = 250
+                point_12[1] -= me_ajuda
+            elif point_12[1] < 250:
+                me_ajuda = 250 - point_12[1]
+                point_12[1] = 250
+                point_12[1] += me_ajuda
+        w.delete('all')
+        w.create_line(250,0,250,500)
+        w.create_line(0,250,500,250)
+        w.create_line(point_1 [0],point_1 [1],point_2 [0],point_2 [1])
+        w.create_line(point_2 [0],point_2 [1],point_3 [0],point_3 [1])
+        w.create_line(point_3 [0],point_3 [1],point_4 [0],point_4 [1])
+        w.create_line(point_4 [0],point_4 [1],point_5 [0],point_5 [1])
+        w.create_line(point_5 [0],point_5 [1],point_6 [0],point_6 [1])
+        w.create_line(point_6 [0],point_6 [1],point_7 [0],point_7 [1])
+        w.create_line(point_7 [0],point_7 [1],point_8 [0],point_8 [1])
+        w.create_line(point_8 [0],point_8 [1],point_9 [0],point_9 [1])
+        w.create_line(point_9 [0],point_9 [1],point_10[0],point_10[1])
+        w.create_line(point_10[0],point_10[1],point_11[0],point_11[1])
+        w.create_line(point_11[0],point_11[1],point_12[0],point_12[1])
+        w.create_line(point_12[0],point_12[1],point_1 [0],point_1 [1])
+        
 telinha.mainloop()
